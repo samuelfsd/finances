@@ -2,13 +2,14 @@ import {createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root{
-    --red-background:#FF5959;
+    --background:#FF5959;
+    --red-light:#f08080;
     --gray:#676FA3;
     --gray-light:#CDDEFF;
 
     --text-title:#363f5f;
     --text-body:#969cb3;
-    --background:#EEF2FF;
+    --background-gray:#EEF2FF;
     --shape:#FFF;
   }
   *{
@@ -28,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: var()(--red-background);
+    background: var(--background-gray);
     -webkit-font-smoothing:antialiased;
   }
 
